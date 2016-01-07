@@ -1,0 +1,537 @@
+/*
+Theme Name: BlackIce
+Theme URL: http://labelfables.com/
+Author: NiniC
+Author URI: http://theruddypotato.tumblr.com/
+Description: BlackIce was created for project "Label Fables." It combines minimalism with sophistication.
+*/
+/*
+ * Author: Annie Chen 
+ * Copyright: Label Fables
+ * Theme name: Black Ice
+ */
+
+
+body {
+   top:0px;
+   font-family: 'Mallanna', sans-serif;
+   margin:0;
+   background: radial-gradient(circle,  #85D8CE 30%, #085078 120%);
+   background-attachment: fixed;
+}
+a {
+    text-decoration: none;
+}
+/****************Split screen into nav bar and content************/
+.left {
+    position:fixed;
+    width:100px;
+    height:100%;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width:0px;
+    border-right-width:1px;
+    border-bottom-width: 0px;
+    border-color: rgba(255, 255, 255, .1);
+}
+.right {
+    margin-left: 100px;
+}
+/************************Content Structure***********************/
+.singleContent {
+    margin: auto;
+    display: table;
+    position: relative;
+}
+.singleContent li {
+    display:block;
+    position:relative;
+}
+.singleContent ul {
+    padding: 0;
+    margin: 20px 0;
+    color: black;
+}
+/*Accordian rows*/
+.singleContent ul > li {
+    list-style: none;
+    display: block;
+    overflow: hidden;
+    color: #101010;
+}
+/************Accordian Content Single Page Aesthetics***********/
+/*Accordian rows*/
+.accordian_item ul > li {
+    padding: 15px;
+    color:white;
+    background-color: rgba(8,80,120, .1);
+}
+/******************Accordian Content Aesthetics*****************/
+.accordian_list {
+    width: 80%;
+    margin: auto;
+    display: table;
+    position: relative;
+}
+.accordian_list ul:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+/*Accordian rows*/
+.accordian_list ul > li {
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+     -o-transition: all .5s ease;
+     transition: all .5s ease;
+}
+.accordian_list ul > li:hover {
+    background:rgba(255,255,255, .5);
+    box-shadow:0px 0px 20px rgba(255,255,255, .5);  
+}
+
+/*Individual row details*/
+.expand {
+    cursor: pointer;
+}
+.title {
+    line-height: 60px;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content {
+    margin-bottom: 20px;
+    margin-top:20px;
+    margin-left:10px;
+    margin-right:10px;
+    display: none;
+    overflow: hidden;
+}
+.content a{
+    font-weight: bold;
+	color:rgba(0,0,0, .8);
+}
+.expand_icon {
+    margin-top: 12px;
+    margin-left: 20px;
+    width: 15px;
+    height: 100%;
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+li .details {
+    font-size: 30px;
+    visibility: hidden;
+    float: right;
+    margin-top:0px;
+    margin-right: 50px;
+    color: rgba(8, 80, 120, .8);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 1px solid;
+    text-align: center;
+    line-height:38px;
+        -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+     -ms-transition: all .2s ease;
+     -o-transition: all .2s ease;
+     transition: all .2s ease;
+}
+li:hover .details {
+    visibility: visible;
+}
+.details:hover {
+    color: white;
+}
+
+
+/*.details:hover{
+    padding:10px;
+    background:rgba(255,255,255,.5);
+}*/
+/*******************Page Content*************************/
+.title_page {
+    font-size: 70px;
+    text-align: center;
+}
+.pageWidth {
+    width:80%;
+}
+
+/**********************Navigation Bar*********************/
+.nav_bar ul li.current-menu-item a:link, .nav_bar ul li.current-menu-item a:visited {
+    text-shadow:0px 0px 5px white;
+    padding:10px;
+    width: 100px;
+    letter-spacing: 2px;
+    cursor: default;
+}
+.nav_bar ul li {
+    display: table-row;
+    z-index:5;
+}
+.nav_bar  ul li  a {
+    padding:10px;
+    color:white;
+    text-transform: uppercase;
+    opacity: .9;
+    -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+     -o-transition: all  .5s ease;
+     transition: all .5s ease;
+    z-index:5;
+}
+.nav_bar  ul  li  a:hover {
+    letter-spacing: 2px;
+    text-shadow:0px 0px 5px white;
+    padding:10px;
+    opacity: 1;
+    z-index:5;
+}
+.nav_bar ul {
+    width:100px;
+    position: absolute;
+    display:table;
+    list-style-type: none;
+    height: 60%;
+    top:30%;
+    padding:0;
+    text-align: center;
+    z-index:5;
+}
+.nav_bar {
+    height: 100%;
+    text-align: center;
+    z-index:10;
+}
+.nav_bar:hover{  
+         -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+     -o-transition: all  .5s ease;
+     transition: all .5s ease;
+       background-color: rgba(8,80,120, .3);
+       box-shadow:0px 0px 15px rgba(8,80,120, .8);
+}
+.left:hover {
+        border-right-width:0px;
+
+}
+
+/***************Expand/Collapse Icon********************/
+.expand_collapse {
+    position:fixed;
+    right:0px;
+    top:49%;
+    text-align: center;
+    line-height:44px;
+    margin-top: -50px;
+    margin-right: 10px;
+    z-index:3;
+
+}
+.expand_all, .collapse_all{
+    color:white;
+    font-size: 35px;
+    opacity:.7;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+}
+.expand_all:hover, .collapse_all:hover{
+    cursor:pointer;
+    opacity:1;
+    text-shadow:0px 0px 5px white;
+}
+
+
+/***********************Logo Icon***********************/
+.icon {
+	margin-top:15px;
+    height:60px;
+    width:70px;
+}
+
+/********************Individual Post*********************/
+.individual_post{
+    width: 80%;
+    margin: auto;
+    display: table;
+    position: relative;
+}
+.post_info {
+    font-size: 15px;
+    float:right;
+}
+
+/***********************Comments*************************/
+.comments {
+	margin-top:50px;
+    margin-bottom:50px;
+	width:80%;
+	margin-left:10%;
+    border-style: solid;
+    border-top-width: 1px;
+    border-left-width:0px;
+    border-right-width:0px;
+    border-bottom-width:0px;
+    border-color: rgba(255, 255, 255, .5);
+}
+.single_comment {
+	padding: 15px;
+    color:white;
+    background-color: rgba(8,80,120, .1);
+}
+.single_comment:last-child {
+  /*  border-bottom: 1px solid rgba(255, 255, 255, .5);*/
+}
+.comment-meta, .reply{
+	text-align:right;
+}
+.comment_text{
+	margin-left:50px;
+	width:calc(100%-1000px);
+}
+.time {
+    margin-right:25px;
+    float:right;
+}
+.bypostauthor {
+    background-color: black; 
+}
+#comment {
+    float:left;
+    margin-left:-2px;
+    width:80%;
+    height: 50px;
+    border-style:solid;
+    border-width: 0px;
+    border-color: rgba(8,80,120, .5);
+    border-radius: 2px;
+    resize: none;
+}
+#numComments {
+    left:0px;
+}
+#submit {
+    position:relative;  
+    float:right;  
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgba(8,80,120, .8);
+    color:rgba(8,80,120, .7);
+    background:none;
+    font-size:15px;
+    height:55px;
+    font-family: 'Mallanna', sans-serif;
+    width:15%;
+    text-align: center;
+    cursor:pointer;
+        -webkit-transition: all .3s ease;
+     -moz-transition: all .3s ease;
+     -ms-transition: all .3s ease;
+     -o-transition: all .3s ease;
+     transition: all .3s ease;
+}
+#submit:hover {
+    border-color:white;
+    color:white;
+}
+
+/***********************Share Form***********************/
+.form_div{
+    padding:100px;
+    color: orange;
+    border:solid;
+    border-width: 10px;
+    font-size: 100px;
+}
+
+/*********************Contact Form***********************/
+.contactForm {
+    width:100%;
+    color:white;
+    background-color: rgba(8,80,120, .1);
+}
+.required {
+    text-align:left;
+    color:rgb(8,80,120);
+    font-weight: bold;
+}
+.contactInputBox {
+    float:right;
+    border-style:solid;
+    border-radius: 2px;
+    border-width: 0px;
+    border-color: rgba(8,80,120, .5);
+    width:70%;
+    margin-top: 3px;
+    height:20px;
+    font-size: 13px;
+    resize: none;
+}
+.contactInstr {
+    padding:10px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.contactInstrLast{
+    border-style:solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-color: rgba(8,80,120, .5);
+    height:150px;
+    padding:10px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.contactInputTextArea {
+    margin-top: 3px;
+    float:right;
+    border-style:solid;
+    border-radius: 2px;
+    border-width: 0px;
+    border-color: rgba(8,80,120, .5);
+    width:70%;
+    top:50%;
+    height:140px;
+    font-size: 13px;
+    resize: none;
+}
+.contactInstr:hover, .contactInstrLast:hover{
+    color:black;
+    background:rgba(255,255,255, .5);
+}
+.submitContact {
+    font-family: 'Mallanna', sans-serif;
+    font-size: 15px;
+    width:50%;
+    background: none;
+    border-style:solid;
+    border-width:2px;
+    color:rgba(8,80,120, 1);
+    border-color: rgba(8,80,120, 1);
+    margin-left:25%;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.submitContact:hover{
+    color:white;
+    border-color: white;
+    cursor:pointer;
+}
+
+/***************Small screen/ mobile scaling*************/
+@media screen and (max-width: 700px) {
+    .left {   
+        height:90px;
+        width:100%;
+        border-right-width:0px;
+    }
+    .right {
+        margin-left: 0;
+    }
+    /********Nav Bar********/
+    .nav_bar {
+        position: fixed;
+        top:0px;
+        height: 100px;
+        background-color: rgba(8,80,120, .3);
+        z-index: 3;
+    }
+    .nav_bar:hover {
+        background-color: rgba(8,80,120, .6);
+        box-shadow: none;
+    }
+    .nav_bar  ul {
+    	position: absolute;
+        margin-top: 5px;
+    	left: calc(50% - 90px);
+        height:50px;
+        display: flex;
+/*        flex-wrap: wrap;
+*/    }
+    .icon {
+        position: absolute;
+        left:15px;
+    }
+    
+    .mobile_fix {
+        margin-top:100px;
+    }
+
+    /*********Accordian List**********/
+    .accordian_list {
+        margin-top:75px;
+        width: 100%;
+    }
+    li .details{
+        visibility: visible;
+    }
+    /********Expand icons**********/
+    .expand_collapse {
+        position:fixed;
+        top:62px;
+        text-align: center;
+        line-height:18px;
+        margin-right: 15px;
+        z-index:3;
+    }
+    .expand_all, .collapse_all{
+        font-size: 35px;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+    }
+    /*********Page Content*********/
+    .title_page {
+        font-size: 10vw;
+    }
+    .pageWidth {
+        width:100%;
+    }
+
+    /**********Comments***********/
+    #comment{
+        clear:both;
+        float:none;
+        width:100%;
+    }
+    #submit {
+        width:100%;
+        font-size: 20px;
+        height:45px;
+    }
+    /********Contact Form********/
+    .contactForm {
+        width:100%;
+    }
+    .submitContact {
+        width:90%;
+        margin-left:5%;
+    }
+    /******Single Content**********/
+    .singleContent {
+        width:100%;
+    }
+
+
+}

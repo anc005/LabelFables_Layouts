@@ -1,0 +1,204 @@
+table, td, tr {
+width:100%;
+
+}
+
+td.ss-form-entry{
+display:block;
+width:100%;
+
+}
+.ss-item {
+padding:0;
+margin:0;
+width:100%;
+}
+
+ol {
+margin: 0; 
+    padding: 0; 
+width:100%;
+float:left;
+display: block;
+list-style-type:none;
+}
+form#ss-form>ol {
+margin: 0; 
+    padding: 0; 
+width:100%;
+float:left;
+}
+body.ss-base-body {
+    background-color: #ffebe8;
+border-style:solid;
+border-width:2px;
+    border-color: #cc0000;
+}
+.ss-form{
+width:100%;
+}
+form#ss-form {
+width:100%;
+margin:0;
+padding:0;
+}
+
+div.ss-navigate {
+padding:10px;
+padding-left:25%;
+margin:0;
+width:100%;
+}
+
+#ss-submit {
+    font-family: 'Mallanna', sans-serif;
+    text-transform: uppercase;
+       font-size: 15px;
+    width:50%;
+    background: none;
+    border-style:solid;
+    border-width:2px;
+    color:rgba(8,80,120, 1);
+    border-color: rgba(8,80,120, 1);
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+   left:50%;
+}
+#ss-submit:hover {
+    color:white;
+    border-color: white;
+    cursor:pointer;
+}
+
+div.wpgform-captcha {
+    margin: 0px;
+    display: none;
+}
+div.ss-form-entry {
+   width:100%;
+   color:white;
+    padding:10px;
+    background-color: rgba(8,80,120, .1);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+div.ss-form-entry:hover {
+   color: black;
+    background: rgba(255,255,255, .5);
+
+}
+div.ss-q-help {
+  font-size:9px;
+  font-style:italic;
+}
+
+div.ss-form {
+   width:100%;
+}
+
+/*  2013-06-04:  Hide "Edit this Form" link */
+a.ss-edit-link {
+    display: none;
+}
+div.ss-form-container div.required-message {
+    display: none;
+}
+div.ss-form-container{
+   margin:0;
+   padding:0;
+   width:100%;
+}
+div.error-message {
+    display: none;
+}
+/*  2013-06-06:  Hide help text for scales */
+div.aria-only-help {
+    display: none;
+}
+
+input.ss-q-short {
+   width:50%;
+   resize:none;
+   border-width:0px;
+   border-radius: 2px;
+}
+
+/* 2013-10-30:  Attempt to make text entry boxes a reasonable width */
+textarea.ss-q-long {
+    width:  calc(100% - 25px);
+    resize:none;
+    border-width:0px;
+    border-radius: 2px;
+}
+@media screen and (max-width: 700px) {
+    input.ss-q-short {
+         width:calc(100% - 25px);
+         resize:none;
+         border-radius: 2px;
+         border-width:0px;
+   }
+   textarea.ss-q-long {
+         width: calc(100% - 25px);
+         resize:none;
+         border-radius: 2px;
+         border-width:0px;
+   }
+   #ss-submit {
+        width:90%;
+   }
+  div.ss-navigate {
+       padding-left:5%;
+     
+  }
+
+}
+/* 2013-11-15:  CSS to support using WordPress Google form to render spreadsheets */
+
+/**  Hide the gunk that Google adds to make the table work **/
+td.hd, td.headerEnd, tr.rShim, td.sortBar {
+    display: none;
+    width: 0px !important;
+    padding: 0px !important;
+}
+
+/**  Empty selector but could be used to select all of the table cells **/
+tr.rShim td, tr.rShim ~ tr td {
+}
+
+/**  Hide the "powered" and "listview" DIVs that Google adds **/
+div div span.powered, div.listview {
+    display: none;
+}
+
+
+/*  This hides the "Never submit passwords through Google Forms." warning. */
+td.ss-form-entry > div.ss-secondary-text {
+    display: none;
+}
+div.ss-form-container div.disclaimer {
+    display: none;
+}
+label.gform-error,
+label.wpgform-error {
+    float: right;
+    color: red;
+    font-weight: bold;
+}
+
+
+div.ss-required-asterisk {
+    color:rgb(8,80,120);
+    font-weight: bold;
+}
+div.ss-footer-txt, div.ss-logo {
+    display: none;
+}
+div.ss-no-ignore-whitespace {
+    white-space: pre-wrap;
+}
